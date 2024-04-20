@@ -1,0 +1,573 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #949cb0;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.sub {
+    background-color: #949cb0;
+    border: 1px solid #fff;
+    flex: 1 1 100%;
+    height: 100vh;
+    width: 100%;
+    padding: 1px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: spece-between;
+    background-color: #687eff;
+    color: #ddd;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+    border-bottom: 3px solid #000;
+}
+
+.menu:hover {
+    color: #000;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    background-color: #687eff;
+
+
+    position: absolute;
+}
+
+nav ul:hover {
+    flex-direction: column;
+    color: #ddd;
+
+}
+
+.menu ul li {
+    align-items: center;
+    background-color: #687eff;
+}
+
+.img {
+    height: 20px;
+    width: 40px;
+    border: #fff solid 1px;
+    margin: 10px;
+    
+}
+
+.box {
+    padding: 13px;
+    display: block;
+    position: absolute;
+    right: 10px;
+}
+
+.one {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.two {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+
+}
+
+.three {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.box:hover .one {
+    rotate: 36deg;
+    margin-bottom: -1px;
+    transform: 3s;
+}
+
+.box:hover .two {
+    background-color: transparent;
+    transform: 1s;
+}
+
+.box:hover .three {
+    rotate: -36deg;
+    margin-top: -1px;
+
+}
+
+.photob {
+    height: 270px;
+    width: 260px;
+    position: absolute;
+    top: 60px;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    margin-left: 25px;
+}
+
+.photoi {
+    border: 2px solid #000;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    opacity: hidden;
+}
+
+.name {
+    position: absolute;
+    display: flex;
+    right: 80px;
+    bottom: 250px;
+}
+
+.work {
+    bottom: 240px;
+    right: 110px;
+    font-size: 10px;
+    position: absolute;
+}
+
+.linktin {
+    height: 33px;
+    width: 33px;
+    position: absolute;
+    right: 185px;
+    border-radius: 3px;
+    border: 0.2px solid #000;
+    background-image: url('../Profile/images/linkedin.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    bottom: 210px;
+
+}
+
+.git {
+    height: 33px;
+    width: 33px;
+    position: absolute;
+    right: 145px;
+    border-radius: 3px;
+    border: 0.2px solid #000;
+    background-image: url('../Profile/images/github.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    bottom: 210px;
+}
+
+.x {
+    height: 33px;
+    width: 33px;
+    position: absolute;
+    right: 105px;
+    border-radius: 3px;
+    border: 0.2px solid #000;
+    background-image: url('../Profile/images/twitter.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    bottom: 210px;
+}
+
+.info1 {
+    bottom: 130px;
+    position: absolute;
+    left: 60px;
+    width: 250px;
+}
+
+.exp {
+    position: absolute;
+    font-size: 30px;
+    bottom: 48px;
+    width: 100px;
+    display: flex;
+    right: 220px;
+}
+
+.client {
+    position: absolute;
+    font-size: 30px;
+    bottom: 48px;
+    width: 100px;
+    display: flex;
+    right: 120px;
+}
+
+.cv {
+    position: absolute;
+    height: 30px;
+    width: 90px;
+    bottom: 78px;
+    right: 15px;
+    font-size: 10px;
+}
+
+
+
+
+
+/* Tablet layout */
+
+@media (min-width: 600px) {
+    .box {
+        display: none;
+    }
+
+    .sub {
+        border-radius: 20px;
+        height: 100vh;
+        position: relative;
+    }
+
+    nav ul {
+        color: #ddd;
+        gap: 40px;
+        display: flex;
+        position: absolute;
+        right: 40px;
+        pointer-events: none;
+
+
+    }
+
+    .flex1 {
+        display: flex;
+    }
+
+    .photob {
+        display: flex;
+        top: 60px;
+        margin-left: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #ddd;
+        position: absolute;
+        border: 1px solid #ddd;
+    }
+
+    .name {
+        font-size: 30px;
+        bottom: 280px;
+        left: 90px;
+        position: absolute;
+        display: flex;
+    }
+
+    .work {
+        font-size: 10px;
+        position: absolute;
+        bottom: 280px;
+        left: 160px;
+    }
+
+    .linktin {
+        height: 33px;
+        width: 33px;
+        position: absolute;
+        border-radius: 3px;
+        border: 0.2px solid #000;
+        background-image: url('../Profile/images/linkedin.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 10px;
+        bottom: 220px;
+        left: 130px;
+    }
+
+    .git {
+        height: 33px;
+        width: 33px;
+        position: absolute;
+        border-radius: 3px;
+        border: 0.2px solid #000;
+        background-image: url('../Profile/images/github.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 10px;
+        bottom: 220px;
+        left: 190px;
+
+    }
+
+    .x {
+        height: 33px;
+        width: 33px;
+        position: absolute;
+        border-radius: 3px;
+        border: 0.2px solid #000;
+        background-image: url('../Profile/images/twitter.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 10px;
+        bottom: 220px;
+        left: 250px;
+    }
+
+    .info1 {
+        position: absolute;
+        width: 250px;
+        top: 140px;
+        left: 335px
+    }
+
+    .exp1 {
+        position: absolute;
+        font-size: 30px;
+        width: 100px;
+        display: flex;
+        top: 200px;
+        right: 300px;
+    }
+
+    .client {
+        position: absolute;
+        font-size: 30px;
+        width: 100px;
+        display: flex;
+        top: 200px;
+        right: 180px;
+    }
+
+    .cv {
+        position: absolute;
+        height: 30px;
+        width: 90px;
+        font-size: 10px;
+        top: 230px;
+        right: 40px;
+    }
+    .menu li:hover{
+        color: #fff;
+        font-size: 18px;
+    }
+
+}
+
+
+/* CSS for desktop view */
+@media (min-width: 1024px) {
+
+    .box {
+        display: none;
+    }
+
+    .sub {
+        border-radius: 20px;
+        height: 100vh;
+        position: relative;
+    }
+
+    nav ul {
+        display: flex;
+        color: #000;
+
+
+    }
+
+    .photob {
+        height: 400px;
+        width: 310px;
+        position: absolute;
+        top: 60px;
+        background-color: #687eff;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        margin-left: 20px;
+        display: flex;
+    }
+  
+    .name {
+        position: absolute;
+        display: flex;
+        left: 70px;
+        top: 490px;
+
+    }
+
+    .work {
+        font-size: 10px;
+        position: absolute;
+        left: 115px;
+        bottom: 160px;
+    }
+
+    .linktin {
+        height: 33px;
+        width: 33px;
+        position: absolute;
+        right: 175px;
+        border-radius: 3px;
+        border: 0.2px solid #000;
+        background-image: url('../Profile/images/linkedin.png');
+        background-position: center;
+        background-size: 10px;
+        background-repeat: no-repeat;
+        bottom: 100px;
+        left: 100px;
+    }
+
+    .git {
+        height: 33px;
+        width: 33px;
+        position: absolute;
+        border-radius: 3px;
+        border: 0.2px solid #000;
+        background-image: url('../Profile/images/github.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 10px;
+        bottom: 100px;
+        left: 100;
+    }
+
+    .x {
+        height: 33px;
+        width: 33px;
+        position: absolute;
+        border-radius: 3px;
+        border: 0.2px solid #000;
+        background-image: url('../Profile/images/twitter.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 10px;
+        bottom: 100px;
+        left: 145px;
+    }
+
+    .info1 {
+        position: absolute;
+        width: 900px;
+        font-size: 70px;
+        top: 20px;
+        left: 500px;
+        margin-top: 10px;
+    }
+
+    .exp {
+        position: absolute;
+        font-size: 80px;
+        width: 100px;
+        display: flex;
+        left: 600px;
+        top: 400px;
+    }
+
+    .client {
+        position: absolute;
+        font-size: 80px;
+        width: 100px;
+        display: flex;
+        left: 900px;
+        top: 400px;
+
+    }
+
+    .cv {
+        position: absolute;
+        height: 50px;
+        width: 120px;
+        font-size: 15px;
+        left: 1200px;
+        top: 430px;
+        border-radius: 7px;
+        border: 0.3px solid #000;
+        background-color: #687eff;
+
+    }
+
+    .experians {
+        position: absolute;
+        right: 100px;
+        top: 280px;
+    }
+    .ex1{
+        width: 300px;
+        position: absolute;
+        top: 300px;
+        left: 60px;
+    }
+
+    .webdevskill {
+        display: flex;
+        margin-top: 13px;
+        height: 4vh;
+        width: 13vw;
+        position: relative;
+        align-items: center;
+        gap: 7px;
+        border-radius: 20px;
+        justify-content: space-between;
+    }
+
+    .webdevskill p {
+        margin: 5px;
+    }
+
+    .progree1bde {
+        border: 1px solid rgb(85, 85, 85);
+        height: 3px;
+        width: 13vw;
+
+
+    }
+
+    .progree1 {
+        background-color: #000;
+        height: 3px;
+    }
+
+    .progresnum {
+        /* border: 1px solid rgb(0, 0, 0);   */
+        border-radius: 10px;
+        height: 2vh;
+        width: 2vw;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 0px;
+        font-size: 13px;
+    }
+    .phone{
+    height: 25px;
+    width: 25p;
+    margin-right: 20px;
+}
+.mail{
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.con1{
+    position: absolute;
+    left: 400px;
+    top: 250px;
+
+}
+a:hover{
+    color: #fff;
+    font-size: 18px;
+}
+
+
+}
+
