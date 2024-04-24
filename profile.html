@@ -41,7 +41,8 @@
             <button class="git" href="#"></button>
             <button class="x" href="#"></button>
             <h4 class="info1" style="margin-top: 40px;"><b>
-                    Hello, I’m <i style="color:blue;">Dwarkesh</i>, <span id="typing">Python devloper</span> Based
+                    Hello, I’m <i style="color:blue;">Dwarkesh</i>,               <span class="typing" style="
+        font-size: 70px;"></span> Based
                     in(india).
                 </b></h4>
             <p class="exp">0.3 <i style="font-size:20px;">years of <br />Experance</i></p>
@@ -234,16 +235,6 @@
 <link rel="stylesheet" href="style.css" type="text/css" media="all">
 <script src="../Profile/Documents/typed.js/typed.min.js"></script>
 <script>
-    var texts = ["Front-end devloper", "Java devloper", "Python devloper"];
-    var index = 0;
-
-    function cahg() {
-        document.getElementById("typing").textContent = texts[index];
-        index = (index + 1) % texts.length;
-    }
-    setInterval(cahg, 2000);
-
-
     document.addEventListener('DOMContentLoded', function () {
       document.querySelectorAll('a[href="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -257,13 +248,20 @@
                 transition: '2s'
               });
             }
-  
-  
           });
         });
       });
     });
   </script>
+     <script src="../profile/Documents/Js_library.js"></script>
+      <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Pythonist", "Web-Developer", "Java Developer"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+      </script>
 
 
 </html>
