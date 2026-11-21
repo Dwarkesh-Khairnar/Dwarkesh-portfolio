@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Skills | Dwarkesh Khairnar</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config={
+theme:{
+extend:{
+colors:{
+paper:"#f8f7f2",
+ink:"#252525",
+muted:"#6d6d66",
+accent:"#d97706",
+accentSoft:"#fff3df",
+line:"#deddd5",
+green:"#52796f"
+}
+}
+}
+}
+</script>
+
+<style>
+body{background:#f8f7f2;color:#252525}
+::selection{background:#f4c27a}
+.nav-link{position:relative}
+.nav-link:after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0;
+height:2px;
+background:#d97706;
+transition:.3s
+}
+.nav-link:hover:after{width:100%}
+</style>
+
+</head>
+
+<body>
+
+<header class="border-b border-line">
+
+<nav class="max-w-6xl mx-auto px-6 h-20
+flex items-center justify-between">
+
+<a href="index.html" class="text-xl font-bold">
+DK<span class="text-accent">.</span>
+</a>
+
+<div class="hidden md:flex gap-8 text-sm font-medium">
+
+<a href="index.html" class="nav-link">Home</a>
+<a href="about.html" class="nav-link">About</a>
+<a href="experience.html" class="nav-link">Experience</a>
+<a href="projects.html" class="nav-link">Projects</a>
+<a href="skills.html" class="nav-link">Skills</a>
+
+<a href="contact.html"
+class="px-5 py-2.5 rounded-full bg-ink text-paper">
+Contact
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="max-w-6xl mx-auto px-6 py-24">
+
+<p class="text-accent font-semibold text-sm mb-4">
+TECHNICAL SKILLS
+</p>
+
+<h1 class="text-5xl md:text-7xl font-bold tracking-tight">
+My toolkit.
+</h1>
+
+
+<div class="grid md:grid-cols-2 gap-6 mt-16">
+
+
+<!-- BACKEND -->
+
+<div class="bg-white border border-line
+rounded-3xl p-8">
+
+<p class="text-sm text-accent font-semibold">
+01
+</p>
+
+<h2 class="text-2xl font-bold mt-4">
+Backend
+</h2>
+
+<div class="flex flex-wrap gap-3 mt-7">
+
+<span class="skill">Node.js</span>
+<span class="skill">Express.js</span>
+<span class="skill">Laravel</span>
+<span class="skill">MySQL</span>
+<span class="skill">PostgreSQL</span>
+<span class="skill">JWT</span>
+<span class="skill">REST APIs</span>
+
+<span class="skill learning">
+Redis · Learning
+</span>
+
+</div>
+
+</div>
+
+
+<!-- FRONTEND -->
+
+<div class="bg-white border border-line
+rounded-3xl p-8">
+
+<p class="text-sm text-accent font-semibold">
+02
+</p>
+
+<h2 class="text-2xl font-bold mt-4">
+Frontend
+</h2>
+
+<div class="flex flex-wrap gap-3 mt-7">
+
+<span class="skill">React.js</span>
+<span class="skill">HTML5</span>
+<span class="skill">CSS3</span>
+<span class="skill">TailwindCSS</span>
+<span class="skill">GSAP</span>
+
+</div>
+
+</div>
+
+
+<!-- PROGRAMMING -->
+
+<div class="bg-white border border-line
+rounded-3xl p-8">
+
+<p class="text-sm text-accent font-semibold">
+03
+</p>
+
+<h2 class="text-2xl font-bold mt-4">
+Programming
+</h2>
+
+<div class="flex flex-wrap gap-3 mt-7">
+
+<span class="skill">JavaScript</span>
+<span class="skill">Python</span>
+
+<span class="skill learning">
+TypeScript · Learning
+</span>
+
+</div>
+
+</div>
+
+
+<!-- TOOLS -->
+
+<div class="bg-white border border-line
+rounded-3xl p-8">
+
+<p class="text-sm text-accent font-semibold">
+04
+</p>
+
+<h2 class="text-2xl font-bold mt-4">
+Tools & Workflow
+</h2>
+
+<div class="flex flex-wrap gap-3 mt-7">
+
+<span class="skill">Git</span>
+<span class="skill">GitHub</span>
+<span class="skill">Docker</span>
+<span class="skill">Postman</span>
+<span class="skill">Agile</span>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer class="border-t border-line">
+
+<div class="max-w-6xl mx-auto px-6 py-8
+flex justify-between text-sm text-muted">
+
+<p>© 2026 Dwarkesh Khairnar</p>
+
+<a href="contact.html" class="hover:text-accent">
+Contact →
+</a>
+
+</div>
+
+</footer>
+
+
+<style>
+
+.skill{
+display:inline-block;
+padding:.6rem 1rem;
+border:1px solid #deddd5;
+border-radius:999px;
+background:#f8f7f2;
+font-size:.9rem;
+}
+
+.learning{
+background:#fff3df;
+border-color:#f4c27a;
+color:#a85d00;
+}
+
+</style>
+
+</body>
+</html>
